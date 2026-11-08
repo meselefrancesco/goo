@@ -2,7 +2,7 @@ import type { ReleaseInfo } from '../backend/types'
 import { compareSemver, parseSemver } from './semver'
 import { isCheckDue, isNewer, loadUpdatePrefs, shouldNotify, CHECK_INTERVAL_MS, DEFAULT_UPDATE_PREFS, type UpdatePrefs } from './updates'
 
-const rel = (version: string): ReleaseInfo => ({ version, url: `https://github.com/perunok/goo/releases/tag/v${version}`, publishedAt: null })
+const rel = (version: string): ReleaseInfo => ({ version, url: `https://github.com/meselefrancesco/goo/releases/tag/v${version}`, publishedAt: null })
 
 describe('semver', () => {
   it('reads plain, v-prefixed and pre-release versions, and refuses the rest', () => {

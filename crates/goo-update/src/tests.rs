@@ -136,7 +136,7 @@ fn sha_hex(bytes: &[u8]) -> String {
 fn releases_are_read_defensively() {
     let r = parse_release(&json!({ "tag_name": "v0.5.0", "published_at": "2026-10-12T13:16:19Z", "html_url": "https://evil.example/x" })).unwrap();
     assert_eq!(r.version, "0.5.0");
-    assert_eq!(r.url, "https://github.com/perunok/goo/releases/tag/v0.5.0"); // built from the version, not from the answer
+    assert_eq!(r.url, "https://github.com/meselefrancesco/goo/releases/tag/v0.5.0"); // built from the version, not from the answer
     assert_eq!(r.published_at, Some(1_791_810_979));
     assert_eq!(parse_release(&json!({ "tag_name": "0.5.0" })).unwrap().published_at, None);
     for bad in [
@@ -713,6 +713,6 @@ fn what_the_ui_receives() {
     };
     assert_eq!(
         serde_json::to_value(&result).unwrap(),
-        json!({ "currentVersion": "0.4.0", "latest": { "version": "0.5.0", "url": "https://github.com/perunok/goo/releases/tag/v0.5.0", "publishedAt": 1_791_810_979 }, "updateAvailable": true, "checkedAt": 1 })
+        json!({ "currentVersion": "0.4.0", "latest": { "version": "0.5.0", "url": "https://github.com/meselefrancesco/goo/releases/tag/v0.5.0", "publishedAt": 1_791_810_979 }, "updateAvailable": true, "checkedAt": 1 })
     );
 }

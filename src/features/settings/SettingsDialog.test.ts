@@ -210,7 +210,7 @@ describe('updates section', () => {
     await vi.waitFor(() => expect($$('[data-testid=update-status] button').some((b) => text(b) === 'View release')).toBe(true))
     expect(text($('.small'))).toContain('development build')
     await fireEvent.click($$('[data-testid=update-status] button').find((b) => text(b) === 'View release')!)
-    expect(open).toHaveBeenCalledWith(`https://github.com/perunok/goo/releases/tag/v${newer}`)
+    expect(open).toHaveBeenCalledWith(`https://github.com/meselefrancesco/goo/releases/tag/v${newer}`)
     open.mockRestore()
   })
 

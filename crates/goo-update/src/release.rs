@@ -6,9 +6,11 @@ use semver::Version;
 use serde::Serialize;
 use serde_json::Value;
 
-pub const RELEASES_REPO: &str = "perunok/goo";
-pub const LATEST_RELEASE_API: &str = "https://api.github.com/repos/perunok/goo/releases/latest";
-pub const DOWNLOAD_PREFIX: &str = "https://github.com/perunok/goo/releases/download/";
+/// Where goo looks for updates: this fork's releases. The three must name the same repository (also
+/// `RELEASE_URL_PREFIX` in src/lib/updates.ts).
+pub const RELEASES_REPO: &str = "meselefrancesco/goo";
+pub const LATEST_RELEASE_API: &str = "https://api.github.com/repos/meselefrancesco/goo/releases/latest";
+pub const DOWNLOAD_PREFIX: &str = "https://github.com/meselefrancesco/goo/releases/download/";
 
 /// Larger answers are refused (a release JSON is a few KB, mostly the notes).
 pub const MAX_RELEASE_JSON: u64 = 1024 * 1024;

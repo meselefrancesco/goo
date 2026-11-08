@@ -96,7 +96,7 @@ describe('checking', () => {
     await updates.check('auto')
     expect(toast()?.action?.label).toBe('View release')
     toast()!.action!.run()
-    expect(open).toHaveBeenCalledWith(`https://github.com/perunok/goo/releases/tag/v${newer()}`)
+    expect(open).toHaveBeenCalledWith(`https://github.com/meselefrancesco/goo/releases/tag/v${newer()}`)
     open.mockRestore()
     await expect(backend.downloadUpdate()).rejects.toMatchObject({ message: expect.stringContaining('development build') })
   })

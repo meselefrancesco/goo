@@ -114,7 +114,7 @@
               Check for new releases automatically
             </label>
             <InfoTip label="About update checks">
-              Once a day goo asks GitHub which version of goo is the latest release (github.com/perunok/goo) and shows a
+              Once a day goo asks GitHub which version of goo is the latest release (github.com/meselefrancesco/goo) and shows a
               notification when there is a newer one. The request sends nothing about you or your notes. Nothing is downloaded until
               you click Update now; then goo downloads the installer from GitHub, checks it against GitHub's checksum, and
               installs it when you restart.

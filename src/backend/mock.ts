@@ -282,7 +282,7 @@ export function createMockBackend(opts: { latencyMs?: number; files?: Record<str
       const newer = latest !== null && compareVersions(latest, current) > 0
       return {
         currentVersion: current,
-        latest: latest ? { version: latest, url: `https://github.com/perunok/goo/releases/tag/v${latest}`, publishedAt: Math.floor(Date.now() / 1000) - 3600 } : null,
+        latest: latest ? { version: latest, url: `https://github.com/meselefrancesco/goo/releases/tag/v${latest}`, publishedAt: Math.floor(Date.now() / 1000) - 3600 } : null,
         updateAvailable: newer,
         checkedAt: Math.floor(Date.now() / 1000),
       }

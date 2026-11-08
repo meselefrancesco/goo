@@ -1,7 +1,7 @@
 //! In-app updates: download the latest release's installer for this installation, verify it, install it, restart.
 //!
 //! What is trusted: the release JSON comes from GitHub's latest-release endpoint over HTTPS, like the update check. The
-//! installer must be the asset with the exact expected name, listed at github.com/perunok/goo/releases/download (or,
+//! installer must be the asset with the exact expected name, listed at github.com/meselefrancesco/goo/releases/download (or,
 //! for a test feed, on the feed's own origin), and its bytes must match the asset's size and GitHub's SHA-256 `digest`:
 //! no digest, a different size or a different hash means the file is deleted and nothing is installed.
 //!

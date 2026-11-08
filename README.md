@@ -8,7 +8,7 @@ Plain Markdown, your folders, your colours: read [the Goo Manifesto](#manifesto)
 
 ![goo: a notes folder in split view, Markdown on the left and its live preview with Mermaid diagrams on the right (Tokyo Night theme, violet accent)](docs/screenshots/01-split-mermaid.png)
 
-**Download:** [latest release](https://github.com/perunok/goo/releases/latest): Linux (`.deb`, `.rpm`, AppImage;
+**Download:** [latest release](https://github.com/meselefrancesco/goo/releases/latest): Linux (`.deb`, `.rpm`, AppImage;
 x64 and arm64), macOS (`.dmg`; Apple silicon and Intel), Windows (`.exe`, `.msi`).
 
 On Linux the package and command are called **`goo-notes`** (Debian/Ubuntu already have an unrelated package `goo`, the

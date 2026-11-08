@@ -22,7 +22,7 @@ export interface UpdatePrefs {
 
 export const DEFAULT_UPDATE_PREFS: UpdatePrefs = { auto: true, lastCheckedAt: null, latest: null, notified: null }
 
-const RELEASE_URL_PREFIX = 'https://github.com/perunok/goo/releases/'
+const RELEASE_URL_PREFIX = 'https://github.com/meselefrancesco/goo/releases/'
 
 const isStableVersion = (v: unknown): v is string => typeof v === 'string' && v.length <= 64 && parseSemver(v)?.prerelease === ''
 
